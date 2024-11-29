@@ -1,0 +1,258 @@
+/*----
+FUENTES
+------*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/*--
+Global Css
+---*/
+:root{
+    --font:#E5E5E5; 
+    --white:#FFFFFF;
+    --Greey:#C5C5C5C5; 
+    --darkblue:#0A3871; 
+    --rgba:rgba(0,0,0,0.08);
+}
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'inter', sans-serif;
+    text-decoration: none;
+    background: var(--white);
+}
+
+body{
+    height: 100%;
+}
+
+img{
+    max-width: 100%;
+}
+
+/*---
+ENCABEZADO
+---*/
+header{
+    position: absolute;
+    margin: 10PX 0PX 0PX 0PX;
+}
+header .logo{
+    display: flex;
+    align-items: flex-start;
+    
+}
+/*---
+PRINCIPAL
+--*/
+main{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.mis_productos{
+    width: 40%;
+    margin: 100px 0px 300px 50px;
+    height: 200px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+    outline: none;
+    border: 1px solid var(--Greey);
+    border-radius: 5px;
+    resize: none;
+    background :  transparent;
+   align-content: flex-start;
+    
+}
+
+.agregar_producto{
+    width: 660px;
+    margin: 100px 0px 100px 150px;
+    height: 350px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+    outline: none;
+    border: 1px solid var(--Greey);
+    border-radius: 5px;
+    resize: none;
+       
+}
+.mis_productos_contenedor{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    padding: 0;
+    gap: 20px;
+    position: absolute;
+    
+}
+
+.agregar_producto_contenedor{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 0;
+    gap: 20px;
+    position: absolute; 
+    margin: 0px 0px 100px 150px;
+    
+}
+
+.btn-Enviar{
+    width: 320px;
+    height: 30px;
+    padding: 24px;
+    font-style:normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 0px;
+    text-align: center;
+    color: var(--white);
+    background: var(--darkblue);
+    border: 1px solid var(--darkblue);
+    border-radius: 24px;
+    cursor: pointer;
+    box-shadow: 0px 20px 29px -5px var(--rgba);
+}
+
+.btn-Enviar:active{
+   box-shadow: inset 2px 2px 4px var(--font);
+   inset: -3px -4px 8px var(--darkblue);
+   color: var(--white);
+    
+}
+
+.btn-Limpiar{
+    width: 320px;
+    height: 30px;
+    padding: 24px;
+    font-style:normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1px;
+    text-align: center;
+    color: var(--darkblue);
+    background: var(--Greey);
+    border: 1px solid var(--darkblue);
+    border-radius: 24px;
+    cursor: pointer;
+    box-shadow: 0px 20px 29px -5px var(--rgba);
+}
+/* dar la sensacion de oprimir boton*/
+.btn-Limpiar:active{
+    box-shadow: inset 2px 2px 4px var(--darkblue);
+    inset: -3px -4px 8px var(--darkblue);
+    color: var(--white);
+    }
+
+    /*dar el aspecto de reducir botones al pasar el cursor */
+.btn-Enviar:hover,
+.btn-Limpiar:hover{
+    transform: scale(0.97);
+}
+
+/*----
+PIE DE PAGINA */
+
+footer{
+    position: absolute;
+    margin: 0PX -50PX 0PX 0PX;
+   
+    
+}
+header .logo1{
+    display: flex;
+    align-items: flex-start;
+  
+}
+
+/*RESPONSIVIDAD*/
+
+@media(max-width: 1250px){
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .mis_productos{
+        margin: 168px 0px 0px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .mis_productos_contenedor{
+        display: flex;
+        align-items: center;
+        position: inherit;
+    }
+
+    .agregar_producto{
+        margin: 168px 0px 0px 0px;
+        display:flexbox;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .agregar_producto_contenedor{
+        display: flexbox;
+        align-items: center;
+        position: inherit;
+        
+    }
+    /* margenes en 0 para que no se separen mucho los btones*/
+
+.nombre{
+    margin: 0px 0px 0px 0px;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+}
+
+.precio{
+    margin: 0px 0px 0px 0px;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+}
+
+.imagen{
+    margin: 0px 0px 0px 0px;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+}
+
+.btn-Enviar{
+    margin: 0px 0px 0px 0px;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+}
+
+.btn-Limpiar{
+    margin: 0px 0px 0px 0px;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+}
+
+
+}
+
+@media(max-width: 720px){
+
+}
